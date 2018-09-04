@@ -331,6 +331,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ChunkLoader.cs" />
+    <Compile Include="Assets\Scripts\LevelCreator.cs" />
     <Compile Include="Assets\Scripts\PlayerMov.cs" />
   </ItemGroup>
   <ItemGroup>
