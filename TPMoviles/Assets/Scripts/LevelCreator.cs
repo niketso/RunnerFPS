@@ -5,14 +5,6 @@ using UnityEngine;
 public class LevelCreator : MonoBehaviour {
 
 
-
-	void Start ()
-    {
-		
-	}
-
-    private void SpawnChunk()
-    {
-
-    }
+   
+   
 }

@@ -5,10 +5,24 @@ using UnityEngine;
 public class ChunkLoader : MonoBehaviour {
 
     public GameObject[] items;
+    [SerializeField]
+    private Transform spawnLocation;
+    [SerializeField]
+    private float chunkLenght;
+    private float nextChunk;
+    [SerializeField]
+    private float viewDistance;
 
-	// Use this for initialization
-	void Start () {
+    private void Start ()
+    {
+        ChunkArray();
+        InstatiateChunks();
+	}
 
+
+
+    private void ChunkArray()
+    {
         var temp = Resources.LoadAll("Chunks/", typeof(GameObject));
 
         items = new GameObject[temp.GetLength(0)];
@@ -22,10 +36,19 @@ public class ChunkLoader : MonoBehaviour {
             i++;
             Debug.Log("un chunk cargado");
         }
-	}
+    }
+
+    private void InstatiateChunks()
+    {
+        int rand = Random.Range(0, 2);
+         Vector3 vecChunk = new Vector3(0, 0, chunkLenght);
+        for (int i = 0; i < viewDistance; i++)
+        {
+            Instantiate(items[rand] , spawnLocation.position , spawnLocation.rotation);
+            spawnLocation.position = spawnLocation.position += vecChunk;
+        }
+        
+    }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	
 }
