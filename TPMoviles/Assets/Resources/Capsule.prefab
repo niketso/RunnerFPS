@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 136938255528139544}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,8 +55,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1216148851405610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6, y: 1.92, z: -96.56}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.24, y: 0.6, z: -1.93}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 4485226994792054}
   m_Father: {fileID: 0}
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f86cb90a6af4756449e619b4e3f3553f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedZ: 0
+  speedZ: 3
   speedX: 5
 --- !u!136 &136938255528139544
 CapsuleCollider:
