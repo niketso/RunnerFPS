@@ -46,12 +46,10 @@ public class ChunkLoader : MonoBehaviour {
         for (int i = 0; i < viewDistance+10; i++)
         {
             
-            rand = Random.Range(0, 3);
+            rand = Random.Range(0, 5);
             Instantiate(items[rand] , spawnLocation.position , spawnLocation.rotation);
             spawnLocation.position = spawnLocation.position += vecChunk;
         }
         
-    }
-	
-	
+    }	
 }

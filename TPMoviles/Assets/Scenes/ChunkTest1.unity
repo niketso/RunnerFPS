@@ -145,9 +145,11 @@ MonoBehaviour:
   - {fileID: 1975831617448482, guid: 1b5ff59a18d41074fb373d37e982ed42, type: 2}
   - {fileID: 1722645696342674, guid: ee30ae2f9e1b5a644ac189e204ca4398, type: 2}
   - {fileID: 1259983672826330, guid: 1d44ac06ed38a2149bda2f17835ea8a7, type: 2}
+  - {fileID: 1550698464234004, guid: ccb1a3e339610cf4ea223eb86f2b750f, type: 2}
+  - {fileID: 1482489879382442, guid: 9233afbbff42b8648ad9fd705f6a74af, type: 2}
   spawnLocation: {fileID: 1718658130}
   chunkLenght: 4.5
-  viewDistance: 3
+  viewDistance: 30
 --- !u!4 &647458139
 Transform:
   m_ObjectHideFlags: 0
@@ -286,7 +288,7 @@ Prefab:
     - target: {fileID: 114549389536020374, guid: 8204449186f91dd48abc2e7eb5fab0cd,
         type: 2}
       propertyPath: speedZ
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8204449186f91dd48abc2e7eb5fab0cd, type: 2}
