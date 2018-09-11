@@ -15,13 +15,13 @@ public class ChunkLoader : MonoBehaviour {
 
     private void Start ()
     {
-        ChunkArray();
+        //ChunkArray();
         InstatiateChunks();
 	}
 
 
 
-    private void ChunkArray()
+    /*private void ChunkArray()
     {
         var temp = Resources.LoadAll("Chunks/", typeof(GameObject));
 
@@ -36,14 +36,17 @@ public class ChunkLoader : MonoBehaviour {
             i++;
             Debug.Log("un chunk cargado");
         }
-    }
+    }*/
 
     private void InstatiateChunks()
     {
-        int rand = Random.Range(0, 2);
-         Vector3 vecChunk = new Vector3(0, 0, chunkLenght);
-        for (int i = 0; i < viewDistance; i++)
+        int rand;
+        Vector3 vecChunk = new Vector3(0, 0, chunkLenght);
+
+        for (int i = 0; i < viewDistance+10; i++)
         {
+            
+            rand = Random.Range(0, 3);
             Instantiate(items[rand] , spawnLocation.position , spawnLocation.rotation);
             spawnLocation.position = spawnLocation.position += vecChunk;
         }
